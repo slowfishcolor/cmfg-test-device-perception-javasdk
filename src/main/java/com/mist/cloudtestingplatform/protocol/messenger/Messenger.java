@@ -19,8 +19,6 @@ public class Messenger implements IMessenger{
 
     private MqttClient mqttClient;
 
-    private int qos = 0;
-
     private Config config;
 
     @Override
