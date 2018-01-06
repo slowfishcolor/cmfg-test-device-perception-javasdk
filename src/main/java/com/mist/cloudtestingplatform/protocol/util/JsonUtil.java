@@ -50,6 +50,8 @@ public class JsonUtil {
             payload.setData(objectMapper.readValue(dataStr, AnalogSampleData.class));
         } else if ("ControlData".equals(payload.getType())) {
             payload.setData(objectMapper.readValue(dataStr, ControlData.class));
+        } else if ("InstructionData".equals(payload.getType())) {
+            payload.setData(objectMapper.readValue(dataStr, InstructionData.class));
         } else {
             payload.setData(null);
         }
