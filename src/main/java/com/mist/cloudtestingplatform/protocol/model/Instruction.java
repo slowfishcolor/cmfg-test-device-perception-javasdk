@@ -21,6 +21,8 @@ public class Instruction {
 
     private boolean pass;
 
+    private int status; // TODO 代替 pass，解决python关键字冲突，更多状态
+
     // 发送指令的 interval
     private long interval;
 
